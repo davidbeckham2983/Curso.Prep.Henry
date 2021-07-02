@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+
+}
+
+.cabecera{
+    text-align: center;
+
+}
+
+h1{
+    color: blanchedalmond;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+h2{
+    color: darkcyan;
+    font-size: 30px;
+}
+
+.uam{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.listaDesordenada{
+    flex: content;
+    color: cornsilk;
+    font-size: 30px;
+}
+
+.listaOrdenada{
+    color: papayawhip;
+    font-size: 30px;
+}
+
+.foto{
+    color:  white;
+   
+}
+.avatar{
+    width: 45%;
+
+}
