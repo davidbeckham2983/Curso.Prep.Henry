@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = Jorge;
+const nuevaString = "Jorge";
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 5;
@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código: 
-  return str:
+  return str;
 }
 
 function suma(x, y) {
@@ -136,19 +136,19 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return num^exponent;
+  return Math.pow(num,exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.ceil(num);
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.round(num);
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -163,8 +163,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if(numero>0)
-  {return "el numero es positivo";}
-  else{return"el numero es negativo";}
+  {return "Es positivo";}
+  else if(numero<0){return"Es negativo";}
+  else{return false;}
 }
 
 function agregarSimboloExclamacion(str) {
@@ -179,34 +180,34 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
 
-  return nombre+" "*apellido
+  return nombre+" "+apellido
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola "+nombre;
+  return "Hola "+nombre+"!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  return "El Area del Rectangulo es "+alto*ancho;
+  return alto*ancho;
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  return "el perimetro del cuadrado es "+4*lado
+  return 4*lado
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return "El Area del Triangulo es" + (base*altura/2);
+  return base*altura/2;
 
 }
 
@@ -215,7 +216,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return "Se reciben "+euro+" que equivalen a "+euro*1.2+" dolares";
+  return euro*1.2;
 }
 
 
@@ -224,15 +225,14 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-  if(letra.length>1)
-  {return"Dato Incorrecto";}
-  else{
-  
-  if(letra=='a'||letra=='e'||letra=='i'||letra=='0'||letra=='u')
-  {return "es Vocal";}else{return "no es Vocal";}
-  
-  }
-
+  if(letra.length>1){
+  return"Dato Incorrecto";}
+  else if(letra==="a"){return "Es vocal";}
+  else if(letra==="e"){return "Es vocal";}
+  else if(letra==="i"){return "Es vocal";}
+  else if(letra==="o"){return "Es vocal";}
+  else if(letra==="u"){return "Es vocal";}
+  else {return "No es vocal";};
 }
 
 
